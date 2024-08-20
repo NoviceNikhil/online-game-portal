@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup Form</title>
+    <link rel="stylesheet" href="accountstyle.css">
+    <script src="accountscript.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <center>
+        <br>
+        <br>
+        <br>
+    <marquee scrollamount="50"><div class="div1"><h2>Sign up and create a minigames account</h2></div>
+    </marquee>
+    <form action="./script.php" method="post">
+            <br>
+       <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+        <br><br><br>
+        <label for="password">PASSWORD:</label><BR>
+        <input type="password" id="password" name="password" size="20" minlength="8" onckeyup="checkEnter(event)">
+                   <br> <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility()">
+                    <label for="showPassword">Show Password</label>
+                    <br><br><br>
+        <label for="gender"><h3>choose a gender</h3></label>
+        <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br><br>
+        <label for="age" >age:</label><br>
+        <input type="text" id="age" name="age"><br><br>
+        <div id="agemessage"></div><div class="g-recaptcha" data-sitekey="6LfLgs8pAAAAAOA6E66LoXOZ1OnKznIvwWbB1NXU"></div>
+        <h2>on succesful creation of your account you will be redericted to the welcome page to login to your account using redirect option</h2>
+        <input type="submit" value="signup" onclick="validateForm()">
+        <a href="./welcomingpage.html"><div id=button>go back</div></a></form>
+    </form>
+</body>
+</html>

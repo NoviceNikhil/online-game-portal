@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        MINIGAMES
+    </title>
+<link rel="stylesheet" href="./styles.css">
+<script src="./welcomepagejs.js"></script>
+</head>
+<body>
+  <h1><marquee scrollamount="20">Welcome to minigames.com</marquee></h1>
+    <h2>click on the button below to create an account to access the games store and get on the leaderboards if you do not have one</h2>
+  <a href="/accountpage.html"><center><div id=button>signup</div></center>
+    <h2>if you already have an account scroll below to login to your minigames account</h2>
+    <div class=gif1>
+      <div class=twoimages>
+   <img src="brickbreaker.gif" height="400" width="400">
+   <img src="flappybird.gif" height="400" width="400" draggable="true">
+    </div><div class="twobuttons">
+    <a href="./brickbreaker/game1.html"><div id=button2 >try birckbreaker</div></a>
+   <a href="./flappybird/game2.html" <div id=button2 >tryflappybird</div></a>
+  </div>
+  </div>
+  <br>
+  <center>
+<h1> login to your minigames account below</h1>
+<form action="./phpscript2.php" method="post">
+<label for="username"><h3>Username</h3></label>
+        <input type="text" id="username" name="username"><br><br>
+        <br><br>
+        <label for="password"><h3>password</h3></label>
+        <input type="password" id="password" name="password" size="20" minlength="8">
+                   <br> <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility()">
+                   <label for="showPassword"><h4>Show Password</h4></label>
+                    </form>            
+                   <a href="./loggedin.html" ><div id=button3>login</div></a>
+  </center>
+</body>
+</html>
